@@ -1,0 +1,15 @@
+CSS UNIDADES------------------
+https://www.w3schools.com/cssref/css_units.php
+https://www.aluracursos.com/blog/guia-de-unidades-en-css
+
+MEDIA QUERIES-------------------
+https://developer.mozilla.org/es/docs/Web/CSS/CSS_media_queries/Using_media_queries
+
+COMO ESCRIBIR Y UN README.ME-----------------
+https://www.aluracursos.com/blog/como-escribir-un-readme-increible-en-tu-github
+
+COMO TRABAJAR UN MARKDOWN-----------------------
+https://www.aluracursos.com/blog/como-trabajar-con-markdown
+
+GITHUB-----------------------------------------
+https://github.com/alura-es-cursos/2085-html-css-responsividad/tree/aula4

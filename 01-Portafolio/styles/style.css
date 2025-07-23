@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{/*Variables css*/
+    --color-primario: #000000;
+    --color-secundario: #f6f6f6;
+    --color-terciario: #22d4fd;
+    --color-hover: #272727;
+
+    --fuente-montserrat: 'Montserrat', sans-serif;
+    --fuente-krona-one: 'Krona One', sans-serif;
+}
+
+* {/*Con "*" selecciona todos los elementos y le aplica lo que coloquemos */
+    padding: 0; /*El padding es el espacio que hay entre el margen y su contenido y lo colacamos en 0*/
+    margin:0;/*El margin es el espacio que hay entre elementos y lo colocamos en 0*/
+}
+
+body{
+    /*height: 100vh;Indica que el elemento debe ocupar el 100% de la altura visible de la ventana del navegador.*/
+    box-sizing: border-box; /*Cambia la forma en que se calcula el tamaño de un elemento (ancho y alto)*/
+    background-color: var(--color-primario);/*Coloca el color de fondo negro*/
+    color: var(--color-secundario);/*Coloca color a todo los textos que encuentre*/
+}
+.header{
+    padding: 2% 0% 0% 15%;/*Coloca paddinn en todas las direcciones*/
+}
+.header__menu{
+    display: flex;/*Hace el elemnto flexible para distribuir los elementos hijos*/
+    gap: 80px;/*Aplica espacio entre hijos pero se aplica dependiendo de flex-direction, que en nuestro caso es vertical*/
+}
+
+.header__menu__link{
+    font-family: var(--fuente-montserrat);/*Tipo de letra*/
+    font-size: 1.5rem;/*16px = 1rem y 8px = 0.5, entonces 1.5 = 24px y */
+    font-weight: 600;
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+
+.presentacion {
+    padding: 6% 15%; /*Checar*/ /*Coloca padding arriba-abajo y derecha-izquierda*/
+    display: flex;/*activa el modelo de caja flexible (Flexbox). Permite alinear, distribuir y ordenar fácilmente los elementos hijos dentro de un contenedor.*/
+    align-items: center;/*Alinea los elementos hijos verticalmente dentro de un contenedor que tiene display: flex.*/
+    justify-content: space-between;/*controla la alineación horizontal de los elementos hijos dentro de un contenedor con display: flex. Deja el primer y último elemento pegados a los bordes, y espacia los demás*/
+    gap: 82px;/*Aplica espacio entre hijos pero se aplica dependiendo de flex-direction, que en nuestro caso es horizontal*/
+}
+
+.presentacion__contenido{
+    width: 50%;/*Poner ancho al elemento relativo a la etiqute padre que es la etiqueta main*/
+    display: flex;/*Hace el elemnto flexible para distribuir los elementos hijos*/
+    flex-direction: column;/*define la dirección en la que se colocan los elementos hijos dentro de un contenedor*/
+    gap: 40px;/*Aplica espacio entre hijo pero se aplica dependiendo de flex-direction, que en nuestro caso es vertical*/
+}
+
+.titulo-destaque {
+    color: var(--color-terciario);/*Coloca color al texto pero como es una clase le toma mas importnacia a la clase que al elemento*/
+}
+
+
+.presentacion__contenido__titulo{
+    font-size: 2.25rem;/*16px = 1rem y 8px = 0.5, entonces 36px / 16px = 2.25rem */
+    font-family: var(--fuente-krona-one);/*Tipo de letra*/
+}
+
+.presentacion__contenido__texto{
+    font-size: 1.5rem;/*16px = 1rem y 8px = 0.5, entonces 1.5 = 24px y */
+    font-family: var(--fuente-montserrat);/*Tipo de letra*/
+}
+.presentacion__contenido__texto .certificado{
+    color: var(--color-terciario);/*Coloca color al texto pero como es una clase le toma mas importnacia a la clase que al elemento*/
+    text-decoration: none;/*Quita en un texto cualquier decoracion como sibrayado, tachado etc.*/
+}
+
+.presentacion__enlaces{
+    display: flex;/*Hace el elemnto flexible para distribuir los elementos hijos*/
+    justify-content: space-between;/*controla la alineación horizontal de los elementos hijos */
+    flex-direction: column;/*Define la direccion en las que estaran los hijos dentro de un elemento*/
+    align-items: center;/*Alinea los elementos hijos verticalmente dentro de un contenedor*/
+    gap: 32px;/*Aplica espacio entre hijo pero se aplica dependiendo de flex-direction, que en nuestro caso es vertical*/
+}
+
+.presentacion__enlaces__subtitulo{
+    font-family: var(--fuente-krona-one);
+    font-size: 1.5rem;/*16px = 1rem y 8px = 0.5, entonces 1.5 = 24px y */
+    font-weight: 400;/*anchura del texto*/
+}
+
+.presentacion__enlaces__link{
+    width: 50%;/*Ancho del elemento*/
+    text-align: center;/*Alinea el texto, en nuestro caso es en el centro*/
+    border-radius: 8px;/*Aplica borde al elemento*/
+    font-size: 1.5rem;/*16px = 1rem y 8px = 0.5, entonces 1.5 = 24px y */
+    font-weight: 600;/*Anchura del texto*/
+    padding: 21.5px 0;/*Coloca el padding arriba-abajo=21.5 y dercha-izquierda=0*/
+    text-decoration: none;/*Quita en un texto cualquier decoracion como sibrayado, tachado etc.*/
+    color: var(--color-secundario);/*color de texto*/
+    font-family: var(--fuente-montserrat);/*Fuente del texto*/
+    border: 2px solid var(--color-terciario);/*Coloca un borde con color*/
+    display: flex;/*Hace el elemnto flexible para distribuir los elementos hijos*/
+    justify-content: center;/*controla la alineación horizontal de los elementos hijos */
+    gap: 16px;/*Aplica espacio entre hijo pero se aplica dependiendo de flex-direction, que en nuestro caso es horizontal*/
+}
+
+.presentacion__enlaces__link:hover{
+    cursor: pointer;
+    background-color: var(--color-hover);/*Coloca un color de fondo al pasar el mouse por encima del elemento*/    
+}
+
+.presentacion__imagen{
+    width: 50%; /*medida relativa al padre que es la etiqueta main*/
+}
+
+.footer{
+    background-color: var(--color-terciario);/*Color de fondo del footer*/
+    padding: 24px;
+    color: var(--color-primario);/*Color del texto*/
+    text-align: center;/*Alinea el texto al centro*/
+    font-family: var(--fuente-montserrat);/*Fuente del texto*/
+    font-size: 1.5rem;/*16px = 1rem y 8px = 0.5, entonces 1.5 = 24px y */
+    font-weight: 400;/*Anchura del texto*/
+}
+
+@media(max-width: 1200px){/*Media query para pantallas de 1200px o menos*/
+
+    .header{
+        padding: 10%;
+    }
+
+    .header__menu{
+        display: flex;/*Hace el elemnto flexible para distribuir los elementos hijos*/
+        gap: 40px;/*Aplica espacio entre hijos pero se aplica dependiendo de flex-direction, que en nuestro caso es vertical*/
+    }
+
+    .header__menu{
+        justify-content: center;/*controla la alineación horizontal de los elementos hijos */
+    }
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentacion__contenido{
+        width: auto;/*Con auto se adapta al elemento padre y con 100% simpre sera 100% no se adapta*/
+    }
+}
