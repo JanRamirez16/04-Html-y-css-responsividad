@@ -13,3 +13,6 @@ https://www.aluracursos.com/blog/como-trabajar-con-markdown
 
 GITHUB-----------------------------------------
 https://github.com/alura-es-cursos/2085-html-css-responsividad/tree/aula4
+
+Figma Proyecto-------------------
+https://www.figma.com/design/EAQgNcBE5qOCn5qFFYZzNZ/Portafolio---Curso-3?node-id=8-2&p=f&t=fds04xQiJVw5PwMt-0
